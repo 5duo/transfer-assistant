@@ -1,16 +1,31 @@
-Server running on port 5680
-Error creating database tables: Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
-    at /root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg-pool/index.js:45:11
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async createTables (/root/projects/TransferAssistant/clipboard-sync/backend/dist/database/migrate.js:7:9)
-Database connection error: Error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
-    at Object.continueSession (/root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg/lib/crypto/sasl.js:36:11)
-    at Client._handleAuthSASLContinue (/root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg/lib/client.js:276:18)
-    at Connection.emit (node:events:524:28)
-    at /root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg/lib/connection.js:116:12
-    at Parser.parse (/root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg-protocol/dist/parser.js:36:17)
-    at Socket.<anonymous> (/root/projects/TransferAssistant/clipboard-sync/backend/node_modules/pg-protocol/dist/index.js:11:42)
-    at Socket.emit (node:events:524:28)
-    at addChunk (node:internal/streams/readable:561:12)
-    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
-    at Readable.push (node:internal/streams/readable:392:5)
+
+> backend@1.0.0 start
+> node dist/index.js
+
+SQLite database connected successfully
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5681
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Object.<anonymous> (/root/projects/TransferAssistant/clipboard-sync/backend/dist/index.js:80:8)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+    at node:internal/main/run_main_module:28:49
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 5681
+}
+
+Node.js v20.19.5
