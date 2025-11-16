@@ -1,0 +1,1 @@
+{"version":3,"file":"clipboardController.d.ts","sourceRoot":"","sources":["../../src/controllers/clipboardController.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAG5C,eAAO,MAAM,mBAAmB;kBAEV,OAAO,OAAO,QAAQ;qBAsBnB,OAAO,OAAO,QAAQ;uBAoBpB,OAAO,OAAO,QAAQ;0BAqBnB,OAAO,OAAO,QAAQ;sBAmB1B,OAAO,OAAO,QAAQ;2BAsBjB,OAAO,OAAO,QAAQ;CAoBpD,CAAC"}

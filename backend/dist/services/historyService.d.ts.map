@@ -1,0 +1,1 @@
+{"version":3,"file":"historyService.d.ts","sourceRoot":"","sources":["../../src/services/historyService.ts"],"names":[],"mappings":"AAcA,eAAO,MAAM,cAAc;2BACI,MAAM;qBAWZ,MAAM,WAAW,MAAM,QAAQ,MAAM,GAAG,MAAM,aAAa,MAAM,aAAa,MAAM;yBAahF,MAAM,MAAM,MAAM;0BASjB,MAAM,MAAM,MAAM;kBAc1B,MAAM;CAS3B,CAAC"}
